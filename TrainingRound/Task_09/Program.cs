@@ -1,6 +1,6 @@
 ﻿List<string> inputs = new List<string>();
 int inputRow = 0;
-if (args.Length > 0) 
+if (args.Length > 0)
 {
     using StreamReader sr = new(args[0]);
     inputs.AddRange(sr.ReadToEnd().Split("\n"));
@@ -39,7 +39,7 @@ for (int i = 0; i < testsCount; i++)
                     if (point2 - point1 > 1)
                     {
                         int pointH = r;
-                        while (pointH < areaInput.Count && areaInput[pointH][point2-1]=='*')
+                        while (pointH < areaInput.Count && areaInput[pointH][point2 - 1] == '*')
                         {
                             pointH++;
                         }
@@ -86,7 +86,7 @@ foreach (string res in result)
 
 int GetUserInputToInt(List<string> _inputs)
 {
-    string? userInput = (_inputs.Count > 0) 
+    string? userInput = (_inputs.Count > 0)
         ? _inputs[inputRow]
         : Console.ReadLine();
     inputRow++;
@@ -151,7 +151,7 @@ class Area
         else
         {
             parent.Childrens.Add(_rectangle);
-        }   
+        }
     }
 
     public Rectangle? FindParent(Rectangle _rectangle)
@@ -171,7 +171,7 @@ class Area
         {
             foreach (Rectangle child in _node.Childrens)
             {
-                Rectangle? tmp2 = FindParentRecursively(_rectangle,child);
+                Rectangle? tmp2 = FindParentRecursively(_rectangle, child);
                 if (tmp2 != null) return tmp2;
             }
             return _node;
@@ -199,9 +199,9 @@ class Area
         List<int> res = new();
         int lvl = 0;
         int p = 0;
-        while (p< Rectangles.Count)
+        while (p < Rectangles.Count)
         {
-            if (Rectangles[p].Y+ Rectangles[p].Height < _lvl)
+            if (Rectangles[p].Y + Rectangles[p].Height < _lvl)
             {
                 res.Add(lvl);
                 ScanRecursively(Rectangles[p], lvl, res);
@@ -216,13 +216,13 @@ class Area
     }
     public static void ScanRecursively(
         Rectangle _node,
-        int _lvl, 
+        int _lvl,
         List<int> _res)
     {
         foreach (Rectangle node in _node.Childrens)
         {
             _res.Add(_lvl + 1);
-            ScanRecursively(node, _lvl+1,_res);
+            ScanRecursively(node, _lvl + 1, _res);
         }
     }
 }

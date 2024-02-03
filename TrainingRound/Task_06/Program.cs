@@ -6,8 +6,8 @@ for (int i = 0; i < testsCount; i++)
 {
     string testInput = Console.ReadLine();
     (int x, int y) cursorPosition = (0, 0);
-    List<string> line = new () { ""};
-    foreach(char c in testInput)
+    List<string> line = new() { "" };
+    foreach (char c in testInput)
     {
         if (char.IsNumber(c) || char.IsLower(c))
         {
@@ -50,7 +50,7 @@ for (int i = 0; i < testsCount; i++)
                     }
                     break;
                 case 'B':
-                    cursorPosition.x=0;
+                    cursorPosition.x = 0;
                     break;
                 case 'E':
                     cursorPosition.x = line[cursorPosition.y].Length;
@@ -58,13 +58,13 @@ for (int i = 0; i < testsCount; i++)
                 case 'N':
                     line.Add("");
                     //смещение строк
-                    for(int r = line.Count-1; r> cursorPosition.y; r--)
+                    for (int r = line.Count - 1; r > cursorPosition.y; r--)
                     {
                         line[r] = line[r - 1];
                     }
-                    line[cursorPosition.y+1] = "";
+                    line[cursorPosition.y + 1] = "";
                     //перенос строки
-                    if(cursorPosition.x < line[cursorPosition.y].Length)
+                    if (cursorPosition.x < line[cursorPosition.y].Length)
                     {
                         line[cursorPosition.y + 1] = line[cursorPosition.y][cursorPosition.x..];
                         line[cursorPosition.y] = line[cursorPosition.y][..cursorPosition.x];
@@ -72,9 +72,9 @@ for (int i = 0; i < testsCount; i++)
                     }
                     else
                     {
-                        cursorPosition.x = line[cursorPosition.y+1].Length;
+                        cursorPosition.x = line[cursorPosition.y + 1].Length;
                     }
-                    cursorPosition.y ++;
+                    cursorPosition.y++;
 
                     break;
             }

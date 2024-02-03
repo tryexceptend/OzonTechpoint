@@ -4,26 +4,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TrainingRound", "TrainingRound", "{C7F94C3B-2A09-42C9-AC66-E2ABDD70F2EE}"
+	ProjectSection(SolutionItems) = preProject
+		TrainingRound\README.md = TrainingRound\README.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_01", "TrainingRound\Task_01\Task_01.csproj", "{79114EAF-5F29-4D1F-9595-D6BCD68DAFB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_01", "TrainingRound\Task_01\Task_01.csproj", "{79114EAF-5F29-4D1F-9595-D6BCD68DAFB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_02", "TrainingRound\Task_02\Task_02.csproj", "{9B054A5A-BC7F-4C61-84FB-EEAD6D05ED03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_02", "TrainingRound\Task_02\Task_02.csproj", "{9B054A5A-BC7F-4C61-84FB-EEAD6D05ED03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_03", "TrainingRound\Task_03\Task_03.csproj", "{12EBF837-2189-451A-8F50-B67B012510C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_03", "TrainingRound\Task_03\Task_03.csproj", "{12EBF837-2189-451A-8F50-B67B012510C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_04", "TrainingRound\Task_04\Task_04.csproj", "{3C5E7B62-57C2-4EC0-80C7-E6C51C581E08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_04", "TrainingRound\Task_04\Task_04.csproj", "{3C5E7B62-57C2-4EC0-80C7-E6C51C581E08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_05", "TrainingRound\Task_05\Task_05.csproj", "{1A0BCB6C-D589-4C9D-95A0-F2ACDD529ABA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_05", "TrainingRound\Task_05\Task_05.csproj", "{1A0BCB6C-D589-4C9D-95A0-F2ACDD529ABA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_06", "TrainingRound\Task_06\Task_06.csproj", "{AC8C1335-DEDE-4DAA-8284-8E7B2A13F904}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_06", "TrainingRound\Task_06\Task_06.csproj", "{AC8C1335-DEDE-4DAA-8284-8E7B2A13F904}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_07", "TrainingRound\Task_07\Task_07.csproj", "{9FE461AF-9647-40A9-8A14-017C46C64F18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_07", "TrainingRound\Task_07\Task_07.csproj", "{9FE461AF-9647-40A9-8A14-017C46C64F18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_08", "TrainingRound\Task_08\Task_08.csproj", "{4D0C25C7-63CB-4D0B-8C28-11227B8BE497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_08", "TrainingRound\Task_08\Task_08.csproj", "{4D0C25C7-63CB-4D0B-8C28-11227B8BE497}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_09", "TrainingRound\Task_09\Task_09.csproj", "{DEA9422C-CA0C-4F62-AFE9-FB730BA034C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_09", "TrainingRound\Task_09\Task_09.csproj", "{DEA9422C-CA0C-4F62-AFE9-FB730BA034C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_10", "TrainingRound\Task_10\Task_10.csproj", "{8B3F4F3E-E13D-4BEE-BAC6-3D4392A93709}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_10", "TrainingRound\Task_10\Task_10.csproj", "{8B3F4F3E-E13D-4BEE-BAC6-3D4392A93709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,15 +9,15 @@ for (int i = 0; i < testsCount; i++)
     {
         new Tree()
     };
-    SortedList<int,string> messages = new SortedList<int,string>();
-    for (int c = 0;c< commentsCount; c++)
+    SortedList<int, string> messages = new SortedList<int, string>();
+    for (int c = 0; c < commentsCount; c++)
     {
         string input = Console.ReadLine();
         string[] commentInfo = input.Split(new char[] { ' ' });
         int Id = int.Parse(commentInfo[0]);
         messages.Add(Id, input);
     }
-    foreach(var input in messages)
+    foreach (var input in messages)
     {
         Node node = new(input.Value);
         Node? parent = null;
@@ -42,7 +42,7 @@ for (int i = 0; i < testsCount; i++)
             for (int p = 1; p < count; p++)
             {
                 Node? parent = resultTree[0].AddNodeReturnParent(resultTree[pos].root);
-                if (parent!=null)
+                if (parent != null)
                 {
                     resultTree.RemoveAt(pos);
                 }
@@ -54,7 +54,7 @@ for (int i = 0; i < testsCount; i++)
         }
         count = resultTree.Count;
     } while (count > 1);
-    
+
     result.AddRange(resultTree[0].PrintTree());
 }
 result.RemoveAt(0);
@@ -104,7 +104,8 @@ class Node
 class Tree
 {
     public Node? root = null;
-    public Tree() {
+    public Tree()
+    {
         root = new(-1, -1);
     }
     public Tree(Node _root)
@@ -117,7 +118,7 @@ class Tree
         Node? parent = GetNodeById(_node.ParentId, root);
         if (parent != null)
         {
-            parent.Childrens.Add(_node.Id,_node);
+            parent.Childrens.Add(_node.Id, _node);
             return parent;
         }
         return null;

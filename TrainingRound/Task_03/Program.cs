@@ -17,7 +17,7 @@ for (int i = 0; i < testsCount; i++)
         continue;
     }
     int point1 = 0;
-    int point2 = testInput.Length>4 ? 4: testInput.Length;
+    int point2 = testInput.Length > 4 ? 4 : testInput.Length;
     string tmpNumber = "";
     while (point2 <= testInput.Length)
     {
@@ -26,8 +26,8 @@ for (int i = 0; i < testsCount; i++)
         {
             carNumbers += tmpNumber + " ";
             point1 = point2;
-            point2 = point1+4;
-            if (point2> testInput.Length)
+            point2 = point1 + 4;
+            if (point2 > testInput.Length)
             {
                 point2 = testInput.Length;
             }
@@ -64,9 +64,9 @@ bool ValideCarNumber(string _carNumber)
 {
     if (_carNumber.Length == 4)
     {
-        return char.IsLetter(_carNumber[0]) 
-            && char.IsNumber(_carNumber[1]) 
-            && char.IsLetter(_carNumber[2]) 
+        return char.IsLetter(_carNumber[0])
+            && char.IsNumber(_carNumber[1])
+            && char.IsLetter(_carNumber[2])
             && char.IsLetter(_carNumber[3]);
     }
     if (_carNumber.Length == 5)
